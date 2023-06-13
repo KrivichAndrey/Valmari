@@ -1,0 +1,30 @@
+.logo {
+   --size: 6.2rem;
+
+   @include focus;
+
+   display: flex;
+   align-items: center;
+
+   &__img {
+      width: var(--size);
+      height: var(--size);
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__text {
+      display: block;
+      margin-left: 0.9rem;
+      font-family: "Raleway";
+      font-size: 1.1rem;
+
+      @media (max-width: 1000px) {
+         display: none;
+      }
+   }
+}

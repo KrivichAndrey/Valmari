@@ -1,0 +1,74 @@
+.header {
+   position: relative;
+   padding: 1.2rem 0 1.9rem;
+
+   &::after {
+      content: "";
+      position: absolute;
+      top: 55%;
+      left: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: rgba($color: #55a630, $alpha: 50%);
+
+      @media (max-width: 1000px) {
+         display: none;
+      }
+   }
+
+   &__container {
+      display: grid;
+      grid-template-columns: 1fr 54.1rem;
+      grid-template-rows: repeat(2, auto);
+      row-gap: 3.3rem;
+   }
+
+   &__logo {
+      justify-self: start;
+   }
+
+   &__actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__call-link {
+      @include focus;
+
+      display: flex;
+      column-gap: 2.2rem;
+      align-items: center;
+      font-weight: 500;
+      font-size: 2.5rem;
+      line-height: 1.04;
+
+      img {
+         display: block;
+         width: 2.8rem;
+         height: 2.8rem;
+      }
+   }
+
+   &__social {
+      transform: translateX(5px);
+   }
+
+   &__nav {
+      position: relative;
+      grid-column: 2 span;
+   }
+
+   &__menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 1.625;
+
+      a {
+         @include focus;
+      }
+   }
+}
