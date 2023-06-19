@@ -13,11 +13,19 @@
       height: var(--icon-size);
       color: var(--color);
 
+      img {
+         display: block;
+      }
+
       svg {
-         width: 100%;
-         height: 100%;
          color: inherit;
          fill: currentcolor;
+      }
+
+      svg,
+      img {
+         width: 100%;
+         height: 100%;
          object-fit: cover;
       }
    }

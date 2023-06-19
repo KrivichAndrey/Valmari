@@ -77,6 +77,10 @@ body {
    font-size: 1.6rem;
    line-height: 1.15;
    color: var(--text-color);
+
+   &.lock {
+      overflow: hidden;
+   }
 }
 
 .page__wrapper {
@@ -92,5 +96,26 @@ body {
 .container {
    max-width: calc(var(--container-max-width) + 2 * var(--container-safety-indents));
    margin: 0 auto;
-   padding: 0 15px;
+   padding: 0 var(--container-safety-indents);
+
+   @include max1000 {
+      --container-max-width: 95.9rem;
+   }
+
+   @include max768 {
+      --container-max-width: 64.2rem;
+   }
+
+   @include max768 {
+      --container-max-width: 64.2rem;
+   }
+
+   @include max480 {
+      --container-max-width: 36rem;
+      --container-safety-indents: 10px;
+   }
+
+   @include max320 {
+      --container-max-width: 30rem;
+   }
 }

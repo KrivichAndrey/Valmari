@@ -11,19 +11,65 @@
    <body class="page">
       <div class="page__wrapper">
          <header class="header">
+            <div class="mobile-menu">
+               <div class="mobile-menu__body">
+                  <a class="mobile-menu__call-link" href="tel:+0800508622">
+                     <img src="./img/ic-phone.svg" alt="phone" />
+                     <span>0 (800) 508-622</span>
+                  </a>
+                  <div class="mobile-menu__lang-switcher lang-switcher" tabindex="0">
+                     <button class="lang-switcher__btn" tabindex="-1">
+                        <img src="./img/flag-rf.svg" alt="Russian Federation flag" />
+                     </button>
+                     <span class="lang-switcher__icon">
+                        <svg><use href="./img/svg/sprite.svg#ic-drop-arrow"></use></svg>
+                     </span>
+                  </div>
+                  <nav class="mobile-menu__nav">
+                     <ul class="mobile-menu__list">
+                        <li><a href="#">Курсы обучения</a></li>
+                        <li><a href="#">Вебинары</a></li>
+                        <li><a href="#">Видео-уроки</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Прайс</a></li>
+                        <li><a href="#">Рассписание</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Магазин</a></li>
+                     </ul>
+                  </nav>
+                  <ul class="mobile-menu__social social">
+                     <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                           <svg><use href="./img/svg/sprite.svg#ic-fb"></use></svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                           <svg><use href="./img/svg/sprite.svg#ic-inst"></use></svg>
+                        </a>
+                     </li>
+                  </ul>
+                  <button class="mobile-menu-close">
+                     <svg><use href="./img/svg/sprite.svg#ic-mobile-menu-close"></use></svg>
+                  </button>
+               </div>
+            </div>
             <div class="container header__container">
+               <button class="mobile-menu-open header__mobile-menu-open">
+                  <span class="burger-btn__line"></span>
+               </button>
                <a class="header__logo logo" href="index.html">
                   <div class="logo__img">
                      <img src="./img/logo.svg" alt="Валмари" />
                   </div>
                   <div class="logo__text">Учебный центр<br />косметической косметологии</div>
                </a>
-
+               <a class="header__call-link" href="tel:+0800508622">
+                  <img src="./img/ic-phone.svg" alt="phone" />
+                  <span>0 (800) 508-622</span>
+               </a>
                <div class="header__actions">
-                  <a class="header__call-link" href="tel:+0800508622">
-                     <img src="./img/ic-phone.svg" alt="phone" />
-                     <span>0 (800) 508-622</span>
-                  </a>
                   <ul class="header__social social">
                      <li>
                         <a href="https://www.facebook.com/" target="_blank">
@@ -36,7 +82,7 @@
                         </a>
                      </li>
                   </ul>
-                  <div class="header__lang-switcher lang-switcher" tabindex="0">
+                  <div class="lang-switcher" tabindex="0">
                      <button class="lang-switcher__btn" tabindex="-1">
                         <img src="./img/flag-rf.svg" alt="Russian Federation flag" />
                      </button>
@@ -45,7 +91,6 @@
                      </span>
                   </div>
                </div>
-
                <nav class="header__nav">
                   <ul class="header__menu">
                      <li><a class="menu__link" href="#">Курсы обучения</a></li>
@@ -67,5 +112,6 @@
             <div class="container"></div>
          </footer>
       </div>
+      <script src="./js/mobile-menu.js"></script>
    </body>
 </html>
