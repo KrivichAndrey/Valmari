@@ -20,6 +20,10 @@
    @include max480 {
       padding: 0.7rem 0 0.6rem;
    }
+
+   @media (max-width: 479px) {
+      padding: 0.9rem 0;
+   }
 }
 
 .header__container {
@@ -37,7 +41,7 @@
    }
 
    @include max480 {
-      max-width: 47.5rem;
+      max-width: 46.5rem;
    }
 }
 
@@ -57,6 +61,11 @@
    @include max768 {
       justify-self: center;
       grid-column: 2 span;
+   }
+
+   @media (max-width: 479px) {
+      justify-self: end;
+      grid-column: 6 span;
    }
 }
 
@@ -119,6 +128,10 @@
       line-height: 2.1666;
    }
 
+   @media (max-width: 479px) {
+      display: none;
+   }
+
    @media (max-width: 1440px) and (min-width: 1001px) {
       font-size: calc(2rem + (2.5 - 2) * ((100vw - 100.1rem) / (144 - 100.1)));
    }
@@ -179,5 +192,9 @@
       display: flex;
       justify-self: start;
       grid-column: 5 span;
+   }
+
+   @media (max-width: 479px) {
+      grid-column: 6 span;
    }
 }

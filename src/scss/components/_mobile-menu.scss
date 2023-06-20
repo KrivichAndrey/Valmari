@@ -19,7 +19,7 @@
    }
 }
 
-.burger-btn__line {
+.mobile-menu-open__line {
    width: 75%;
    height: 0.5rem;
    background-color: var(--primary-color);
@@ -92,6 +92,20 @@
       transform: translateX(0);
       transition: transform 0.35s ease;
    }
+
+   @include max320 {
+      width: 28.6rem;
+      padding: 1.874rem 5.748rem 4.825rem 2.388rem;
+   }
+
+   @media (max-width: 479px) and (min-width: 321px) {
+      width: calc(28.6rem + (36.8 - 28.6) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+      padding:
+         calc(1.874rem + (3 - 1.874) * ((100vw - 32.1rem) / (47.9 - 32.1)))
+         calc(5.748rem + (2.5 - 5.748) * ((100vw - 32.1rem) / (47.9 - 32.1)))
+         calc(4.825rem + (12 - 4.825) * ((100vw - 32.1rem) / (47.9 - 32.1)))
+         calc(2.088rem + (3.2 - 2.388) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+   }
 }
 
 .mobile-menu__call-link {
@@ -99,25 +113,53 @@
 
    display: flex;
    column-gap: 1.3rem;
+   align-items: center;
    font-weight: 500;
    font-size: 2.2rem;
    line-height: 1.18;
    color: #303236;
 
    img {
-      --size: 2.3rem;
+      --size: 1em;
 
       width: var(--size);
       height: var(--size);
+   }
+
+   @include max320 {
+      column-gap: 0.8rem;
+      font-size: 1.5rem;
+      line-height: 1.3;
+   }
+
+   @media (max-width: 479px) and (min-width: 321px) {
+      column-gap: calc(0.8rem + (1.3 - 0.8) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+      font-size: calc(1.5rem + (2.2 - 1.5) * ((100vw - 32.1rem) / (47.9 - 32.1)));
    }
 }
 
 .mobile-menu__lang-switcher {
    margin-top: 4rem;
+
+   @include max320 {
+      margin-top: 2.939rem;
+   }
+
+   @media (max-width: 479px) and (min-width: 321px) {
+      margin-top: calc(2.939rem + (4 - 2.939) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+   }
 }
 
 .mobile-menu__nav {
    margin-top: 5.5rem;
+
+   @include max320 {
+      margin-top: 2rem;
+   }
+
+   @media (max-width: 479px) and (min-width: 321px) {
+      margin-top: calc(2rem + (5.5 - 2.8) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+   }
 }
 
 .mobile-menu__list {
@@ -140,6 +182,18 @@
       &:hover {
          color: var(--primary-color);
       }
+
+      @include max320 {
+         padding: 1.5rem 0;
+      }
+   }
+
+   @include max320 {
+      row-gap: 0.1rem;
+   }
+
+   @media (max-width: 479px) and (min-width: 321px) {
+      row-gap: calc(0.1rem + (0.4 - 0.1) * ((100vw - 32.1rem) / (47.9 - 32.1)));
    }
 }
 
@@ -148,17 +202,30 @@
    --gap: 3.2rem;
 
    margin-top: 6.2rem;
+
+   @include max320 {
+      --icon-size: 3rem;
+      --gap: 2.6rem;
+
+      margin-top: 3.8rem;
+   }
+
+   @media (max-width: 479px) and (min-width: 321px) {
+      margin-top: calc(3.8rem + (6.2 - 3.8) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+   }
 }
 
 .mobile-menu-close {
+   --size: 3rem;
+
    @include focus($offset: 1px);
 
    position: absolute;
    top: 3rem;
    right: 2.5rem;
    display: block;
-   width: 3rem;
-   height: 3rem;
+   width: var(--size);
+   height: var(--size);
    color: var(--primary-color);
 
    svg {
@@ -168,5 +235,19 @@
       fill: currentcolor;
       object-fit: cover;
       pointer-events: none;
+   }
+
+   @include max320 {
+      top: 1.874rem;
+      right: 5.748rem;
+      width: 2rem;
+      height: 2rem;
+   }
+
+   @media (max-width: 479px) and (min-width: 321px) {
+      top: calc(1.874rem + (3 - 1.874) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+      right: calc(5.748rem + (2.5 - 5.748) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+      width: calc(2rem + (3 - 2) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+      height: calc(2rem + (3 - 2) * ((100vw - 32.1rem) / (47.9 - 32.1)));
    }
 }
