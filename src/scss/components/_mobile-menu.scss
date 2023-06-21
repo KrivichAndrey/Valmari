@@ -83,7 +83,7 @@
    overflow: auto;
    width: 36.8rem;
    max-height: 100vh;
-   padding: 3rem 2.5rem 12rem 3.2rem;
+   padding: 3rem 2.5rem 12rem 3.6rem;
    background-color: var(--color-white);
    transform: translateX(-100%);
    transition: transform 0.35s ease;
@@ -104,7 +104,7 @@
          calc(1.874rem + (3 - 1.874) * ((100vw - 32.1rem) / (47.9 - 32.1)))
          calc(5.748rem + (2.5 - 5.748) * ((100vw - 32.1rem) / (47.9 - 32.1)))
          calc(4.825rem + (12 - 4.825) * ((100vw - 32.1rem) / (47.9 - 32.1)))
-         calc(2.088rem + (3.2 - 2.388) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+         calc(2.088rem + (3.6 - 2.388) * ((100vw - 32.1rem) / (47.9 - 32.1)));
    }
 }
 
@@ -139,26 +139,26 @@
 }
 
 .mobile-menu__lang-switcher {
-   margin-top: 4rem;
+   margin-top: 4.5rem;
 
    @include max320 {
       margin-top: 2.939rem;
    }
 
    @media (max-width: 479px) and (min-width: 321px) {
-      margin-top: calc(2.939rem + (4 - 2.939) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+      margin-top: calc(2.939rem + (4.5 - 2.939) * ((100vw - 32.1rem) / (47.9 - 32.1)));
    }
 }
 
 .mobile-menu__nav {
-   margin-top: 5.5rem;
+   margin-top: 3.7rem;
 
    @include max320 {
       margin-top: 2rem;
    }
 
    @media (max-width: 479px) and (min-width: 321px) {
-      margin-top: calc(2rem + (5.5 - 2.8) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+      margin-top: calc(2rem + (3.7 - 2.8) * ((100vw - 32.1rem) / (47.9 - 32.1)));
    }
 }
 
@@ -199,9 +199,9 @@
 
 .mobile-menu__social {
    --icon-size: 3.1rem;
-   --gap: 3.2rem;
+   --gap: 3.1rem;
 
-   margin-top: 6.2rem;
+   margin-top: 4.5rem;
 
    @include max320 {
       --icon-size: 3rem;
@@ -211,7 +211,7 @@
    }
 
    @media (max-width: 479px) and (min-width: 321px) {
-      margin-top: calc(3.8rem + (6.2 - 3.8) * ((100vw - 32.1rem) / (47.9 - 32.1)));
+      margin-top: calc(3.8rem + (4.5 - 3.8) * ((100vw - 32.1rem) / (47.9 - 32.1)));
    }
 }
 
