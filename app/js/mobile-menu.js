@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const { body } = document;
 
   function openMenu() {
-    menu.classList.add('active'); 
+    menu.classList.add('active');
     menuBody.classList.add('active');
     body.classList.add('lock');
   }

@@ -4,8 +4,15 @@
 
    // Color
    --color-white: #fff;
-   --text-color: #424242;
-   --primary-color: #55a630;
+   --black: #000;
+   --green: #55a630;
+   --ocean-blue: #4340b4;
+   --black-panther: #424242;
+
+   // global-colors
+   --primary-color: var(--green);
+   --secondary-color: var(--ocean-blue);
+   --text-color: var(--black-panther);
 
    // Sizes
 }

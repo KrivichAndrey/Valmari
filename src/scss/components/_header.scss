@@ -162,6 +162,10 @@
    @include max1000 {
       display: none;
    }
+
+   @media (max-width: 1440px) and (min-width: 1201px) {
+      transform: translateX(calc(20px + (80 - 20) * ((100vw - 1201px) / (1440 - 1201))));
+   }
 }
 
 .header__social {

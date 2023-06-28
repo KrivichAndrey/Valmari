@@ -11,3 +11,10 @@
       border-radius: $radius;
    }
 }
+
+@mixin grid-layout($count: 12, $col-gap: 20px, $row-gap: 0) {
+   display: grid;
+   grid-template-columns: repeat($count, 1fr);
+   column-gap: $col-gap;
+   row-gap: $row-gap;
+}

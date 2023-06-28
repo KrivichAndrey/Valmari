@@ -1,0 +1,50 @@
+.btn {
+   --color: transparent;
+   --bgc: var(--color);
+   --bdc: var(--color);
+   --btn-txt-color: var(--text-color);
+   --bdw: 0;
+   --bds: none;
+   --bdr: unset;
+   --fw: 600;
+
+   @include focus;
+
+   border: var(--bdw) var(--bds) var(--bdc);
+   border-radius: var(--bdr);
+   font-weight: var(--fw);
+   color: var(--btn-txt-color);
+   background-color: var(--bgc);
+
+   &_fill {
+      --btn-txt-color: var(--color-white);
+
+      &_primary {
+         --color: var(--primary-color);
+      }
+
+      &_secondary {
+         --color: var(--secondary-color);
+      }
+   }
+
+   &_outline {
+      --bdw: 0.1rem;
+      --bds: solid;
+      --bgc: transparent;
+
+      &_primary {
+         --color: var(--primary-color);
+         --btn-txt-color: var(--color);
+      }
+
+      &_secondary {
+         --color: var(--secondary-color);
+         --btn-txt-color: var(--color);
+      }
+   }
+
+   &_radius {
+      --bdr: 9px;
+   }
+}
