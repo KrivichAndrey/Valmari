@@ -7,8 +7,8 @@
       content: "";
       position: absolute;
       top: 55%;
-      left: 0;
-      width: 100vw;
+      left: 0.85%;
+      width: calc(100vw - 30px);
       height: 1px;
       background-color: rgba($color: #55a630, $alpha: 50%);
 
@@ -150,7 +150,7 @@
    display: flex;
    column-gap: 72px;
    align-items: center;
-   grid-column: 3 span;
+   grid-column: 2 span;
    transform: translateX(80px);
 
    @include max1200 {

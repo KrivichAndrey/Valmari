@@ -1,7 +1,7 @@
 .hero {
-   padding: 10.5rem 0 13.8rem;
+   padding: 10.5rem 0 13.6rem;
    background-image: url("@img/hero-banner.jpg");
-   background-position: bottom 0 right 13.3%;
+   background-position: bottom 10% right 12.7%;
    background-size: 68.1rem 55.6rem;
    background-repeat: no-repeat;
    background-color: #ecffeb;
@@ -16,14 +16,15 @@
    }
 
    @include max768 {
-      padding: 4.2rem 0 3.02rem;
+      padding: 4.2rem 0 2.82rem;
       background-position: bottom 0 right 12%;
       background-size: 35.4rem 28.9rem;
    }
 
    @include max480 {
-      padding: 4.2rem 0 2.8rem;
-      background-position: bottom -17% right 11%;
+      padding: 4.2rem 0 3.2rem;
+      background-image: url("@img/hero-banner-480.png");
+      background-position: bottom -7% right 10%;
       background-size: 22.6rem 19.2rem;
    }
 
@@ -51,7 +52,7 @@
       padding:
          calc(4.2rem + (7.5 - 4.2) * ((100vw - 76.9rem) / (99.9 - 76.9)))
          0
-         calc(3.02rem + (9.7 - 3.02) * ((100vw - 76.9rem) / (99.9 - 76.9)));
+         calc(2.82rem + (9.7 - 2.82) * ((100vw - 76.9rem) / (99.9 - 76.9)));
       background-size:
          calc(35.4rem + (52.7 - 35.4) * ((100vw - 76.9rem) / (99.9 - 76.9)))
          calc(28.9rem + (43 - 28.9) * ((100vw - 76.9rem) / (99.9 - 76.9)));

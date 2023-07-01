@@ -15,36 +15,36 @@
    font-weight: var(--fw);
    color: var(--btn-txt-color);
    background-color: var(--bgc);
+}
 
-   &_fill {
-      --btn-txt-color: var(--color-white);
+.btn_fill {
+   --btn-txt-color: var(--color-white);
+}
 
-      &_primary {
-         --color: var(--primary-color);
-      }
+.btn_fill_primary {
+   --color: var(--primary-color);
+}
 
-      &_secondary {
-         --color: var(--secondary-color);
-      }
-   }
+.btn_fill_secondary {
+   --color: var(--secondary-color);
+}
 
-   &_outline {
-      --bdw: 0.1rem;
-      --bds: solid;
-      --bgc: transparent;
+.btn_outline {
+   --bdw: 0.1rem;
+   --bds: solid;
+   --bgc: transparent;
+}
 
-      &_primary {
-         --color: var(--primary-color);
-         --btn-txt-color: var(--color);
-      }
+.btn_outline_primary {
+   --color: var(--primary-color);
+   --btn-txt-color: var(--color);
+}
 
-      &_secondary {
-         --color: var(--secondary-color);
-         --btn-txt-color: var(--color);
-      }
-   }
+.btn_outline_secondary {
+   --color: var(--secondary-color);
+   --btn-txt-color: var(--color);
+}
 
-   &_radius {
-      --bdr: 9px;
-   }
+.btn_radius {
+   --bdr: 9px;
 }

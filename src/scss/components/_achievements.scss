@@ -1,0 +1,142 @@
+.achievements {
+   padding-bottom: 150px;
+   background-color: var(--color-white);
+
+   @include max768 {
+      padding-top: 2.6rem;
+   }
+
+   @include max600 {
+      padding-top: 0;
+   }
+}
+
+.achievements-list {
+   position: relative;
+   top: -2.5rem;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: 120px;
+   border-radius: 0.4rem;
+   padding: 5.8rem 5.2rem 4.8rem;
+   box-shadow: -2px 2px 20px 0 rgb(66 66 66 / 15%);
+   background-color: var(--color-white);
+
+   @include max1200 {
+      top: -1.6rem;
+      column-gap: 77px;
+      max-width: 89%;
+      margin: 0 auto;
+      padding: 4.3rem 3.8rem 3.1rem;
+   }
+
+   @include max992 {
+      column-gap: 37px;
+      max-width: 100%;
+   }
+
+   @include max834 {
+      top: 0;
+      padding: 2.6rem 2.66rem 2.8rem;
+   }
+
+   @include max768 {
+      padding: 1.2rem 2.66rem 2.1rem;
+   }
+
+   @include max600 {
+      top: -0.4rem;
+      column-gap: 29px;
+      padding: 1.8rem 2.66rem 2rem;
+   }
+
+   @include max428 {
+      top: -4.5rem;
+      grid-template-columns: 1fr;
+      row-gap: 1.95rem;
+      max-width: 22rem;
+      padding: 2.3rem 2rem 1.8rem;
+   }
+
+   @include max320 {
+      max-width: 18rem;
+   }
+}
+
+.achievement-block {
+   text-align: center;
+
+   @include max428 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: left;
+   }
+}
+
+.achievement-block__number {
+   font-weight: 700;
+   font-size: 4.5rem;
+   line-height: 3.2rem;
+   color: var(--primary-color);
+
+   @include max1200 {
+      font-size: 4rem;
+   }
+
+   @include max834 {
+      font-size: 3.2rem;
+   }
+
+   @include max768 {
+      font-size: 2.5rem;
+   }
+
+   @include max600 {
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+   }
+
+   @include max480 {
+      font-size: 1.7rem;
+      line-height: 2.2rem;
+   }
+}
+
+.achievement-block__text {
+   margin-top: 1.8rem;
+   font-weight: 400;
+   font-size: 2.3rem;
+   line-height: 2.8rem;
+
+   @include max1200 {
+      margin-top: 1.9rem;
+      font-size: 2rem;
+      line-height: 2.1rem;
+   }
+
+   @include max834 {
+      margin-top: 1.2rem;
+      font-size: 1.7rem;
+      line-height: 1.8rem;
+   }
+
+   @include max768 {
+      margin-top: 0.7rem;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+   }
+
+   @include max600 {
+      margin-top: 0.4rem;
+      font-size: 1.1rem;
+   }
+
+   @include max480 {
+      margin-top: 0;
+      font-size: 0.8rem;
+      line-height: 1rem;
+   }
+}
